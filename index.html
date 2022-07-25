@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="center">
+            <input id="contenedor_b" type="text" class="busqueda">
+        </div>
+        <div class="registro">
+            <nav>
+                <ul>
+                    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="carrito-c">0</span></button>
+                    <li><a href="index2.html" >Registro</a></li>
+                    <li><a href="index1.html">inicio de sesion</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <main class="despliege">
+            <div id="menu-despliege">
+                <ul class="nav">
+                    <li><a href="">Tienda</a></li>
+                    <li><a href="">Targetas de regalo</a>
+                        <ul>
+                            <li><a href="">Xbox</a></li>
+                            <li><a href="">Nintendo</a></li>
+                            <li><a href="">PSN</a></li>
+                            <li><a href="">PC</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="" id="categoriaitem" plataforma="psn">PSN </a>
+                        <ul>
+                            <li><a href="#" id="categoryitem" categoria="accion">Accion</a></li>
+                            <li><a href="#" id="categoryitem" categoria="aventura" >Aventura</a></li>
+                            <li><a href="#" id="categoryitem" categoria="conduccion">Conduccion</a></li>
+                            <li><a href="#" id="categoryitem" categoria="estrategia">Estrategia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" id="categoriaitem" plataforma ="xbox">Xbox</a>
+                        <ul>
+                            <li><a href="#" id="categoryitem" categoria="accion">Accion</a></li>
+                            <li><a href="#" id="categoryitem" categoria="aventura">Aventura</a></li>
+                            <li><a href="#" id="categoryitem" categoria="conduccion">Conduccion</a></li>
+                            <li><a href="#" id="categoryitem" categoria="estrategia">Estrategia</a></li>
+                        </ul>
+                        <li><a href="#" id="categoriaitem" plataforma="nintendo">Nintendo</a>
+                            <ul>
+                                <li><a href="#" id="categoryitem" categoria="accion">Accion</a></li>
+                                <li><a href="#" id="categoryitem" categoria="aventura">Aventura</a></li>
+                                <li><a href="#" id="categoryitem" categoria="estrategia">Estrategia</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+    </main>
+    <section id="contenedorProducto">
+        
+    </section>
+  
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+            </div>
+            <p class = "precio_p">precio total: $<span id = "preciototal"></span></p>
+            <button id="vaciar" class="boton-agregar">vaciar carrito</button>
+        </div>
+    </div>
+    <script src="productos.js"></script>
+    <script src="carrito.js"></script>
+    <script src="model.js"></script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>
